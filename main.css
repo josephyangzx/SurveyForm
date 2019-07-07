@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+}
+
+body{
+	text-align: center;
+}
+
+h1{
+	font-size: 3rem;
+}
+
+
+form{
+	margin: 10px 300px;
+	padding: 20px 0px;
+	border: 1px solid #CCC;
+	border-radius: 1em;
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  text-align: right;
+}
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+#submit{
+	font-size: 1.3rem;
+	background-color: #59ace0;
+	border-radius: 4px;
+	color: white;
+	height: 40px;
+	width: 96px;
+	margin: 10px;
+	border: 0px solid;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Survey Form - freeCodeCamp</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <main>
+      <div id="Survey">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill this form so we can send you regular updates about our products!</p>
+        <form id="survey-form" action="xx" method="get">
+          <div>
+            <label for="name" id="name-label">* Name:</label>
+            <input type="text" id="name" name="user_name" placeholder="John Dole" required>
+          </div>
+          <div>
+            <label for="email" id="email-label">* E-mail:</label>
+            <input type="email" name="user_email" id="email" placeholder="xxx@mail.com" required>
+          </div>
+          <div>
+            <label for="bday">* Date of birth:</label>
+            <input type="date" name="user_bday" id="bday" required>
+          </div>
+          <div>
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" name="user_number" id="number" min="1" max="150" placeholder="15">
+          </div>
+          <div>
+            <label for="sex">* Sex:</label>
+            <select id="dropdown" name="currentPos" class="dropdown">
+              <option disabled value>Select an option</option>
+              <option  value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+              <option value="preferNo">Prefer not to say</option>
+            </select>
+          </div>
+          <div>
+            <label for="shoppingFreq">How many times do you go shopping every month?</label>
+            <ul style="list-style: none;">
+              <li class="radio"><label>Less than once<input name="radio-buttons" value="1"  type="radio" class="shoppingFreq" ></label></li>
+              <li class="radio"><label>Less than five times<input name="radio-buttons" value="2"  type="radio" class="shoppingFreq" ></label></li>
+              <li class="radio"><label>More than five times<input name="radio-buttons" value="3"  type="radio" class="shoppingFreq" ></label></li>
+            </ul>
+          </div>
+
+          <div>
+            <label for="shopping">Where do you go shopping?<br>(Check all that apply): </label>
+            <ul id="shopping" style="list-style: none;">
+              <li class="checkbox"><label><input name="shopping" value="1" type="checkbox" class="shoppingPlace">Retail store</label></li>
+              <li class="checkbox"><input name="shopping" value="2" type="checkbox" class="shoppingPlace">Shopping mall</li>
+              <li class="checkbox"><label><input name="shopping" value="3" type="checkbox" class="shoppingPlace">Online retailer</label></li>
+              <li class="checkbox"><label><input name="shopping" value="4" type="checkbox" class="shoppingPlace">Others</label></li>
+            </ul>
+          </div>
+          <div>
+            <label for="comments">Any Comments or Suggestions?</label>
+            <textarea id="comments" class="input-field" style="height:100px; width: 300px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
